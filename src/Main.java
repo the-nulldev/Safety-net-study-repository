@@ -57,4 +57,17 @@ public class Main {
 
         return numbers;
     }
+
+    private static String[] getLetters(Scanner scanner) {
+        System.out.print("Enter the number of letters: ");
+        int count = Integer.parseInt(scanner.nextLine());
+        String[] letters = new String[count];
+
+        for (int i = 0; i < count; i++) {
+            System.out.print("Enter letter " + (i + 1) + ": ");
+            letters[i] = scanner.nextLine();
+        }
+
+        return letters;
+    }
 }
