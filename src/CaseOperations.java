@@ -20,5 +20,12 @@ public class CaseOperations {
 
         return titleCase.toString().trim();
     }
-}
 
+    // Method to capitalize the first letter of the text
+    public static String makeCapitalize(String text) {
+        if (text == null || text.length() == 0) {
+            return text;
+        }
+        return text.substring(0, 1).toUpperCase() + text.substring(1).toLowerCase();
+    }
+}
