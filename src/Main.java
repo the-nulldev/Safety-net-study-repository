@@ -44,4 +44,17 @@ public class Main {
         }
         scanner.close();
     }
+
+    private static int[] getNumbers(Scanner scanner) {
+        System.out.print("Enter the number of values: ");
+        int count = Integer.parseInt(scanner.nextLine());
+        int[] numbers = new int[count];
+
+        for (int i = 0; i < count; i++) {
+            System.out.print("Enter number " + (i + 1) + ": ");
+            numbers[i] = Integer.parseInt(scanner.nextLine());
+        }
+
+        return numbers;
+    }
 }
